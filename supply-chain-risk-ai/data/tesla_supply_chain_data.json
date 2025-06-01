@@ -1,0 +1,547 @@
+{
+  "tesla_comprehensive_risk_analysis": {
+    "metadata": {
+      "combined_timestamp": "2025-05-31 03:02:10",
+      "data_sources": ["financial_monitoring", "geospatial_risk_mapping"],
+      "system_capabilities": [
+        "real_time_financial_monitoring",
+        "external_event_integration", 
+        "scenario_simulation",
+        "geospatial_risk_mapping",
+        "comprehensive_alerting"
+      ]
+    },
+    "tesla_core_metrics": {
+      "financial": {
+        "current_price": 346.4599914550781,
+        "price_change_30d": 43.53896443792378,
+        "volume_avg_30d": 109972689.6,
+        "market_cap": 1115933769728,
+        "pe_ratio": 196.85226,
+        "beta": 2.434,
+        "last_updated": "2025-05-31 02:51:36"
+      },
+      "production_metrics": [
+        {
+          "Quarter": "Q1 2024",
+          "Production": 433000,
+          "Deliveries": 387000,
+          "Production_Gap": 46000
+        },
+        {
+          "Quarter": "Q2 2024", 
+          "Production": 411000,
+          "Deliveries": 444000,
+          "Production_Gap": -33000
+        },
+        {
+          "Quarter": "Q3 2024",
+          "Production": 470000,
+          "Deliveries": 463000,
+          "Production_Gap": 7000
+        },
+        {
+          "Quarter": "Q4 2024",
+          "Production": 459000,
+          "Deliveries": 495000,
+          "Production_Gap": -36000
+        }
+      ]
+    },
+    "manufacturing_infrastructure": {
+      "gigafactories": {
+        "gf1_nevada": {
+          "name": "Gigafactory 1 (Nevada)",
+          "location": [39.5362, -119.3462],
+          "country": "USA",
+          "primary_function": "Battery Production",
+          "annual_capacity": "35 GWh batteries",
+          "key_risks": ["wildfire", "water_shortage", "grid_instability"]
+        },
+        "gf3_shanghai": {
+          "name": "Gigafactory 3 (Shanghai)",
+          "location": [31.1798, 121.1762],
+          "country": "China",
+          "primary_function": "Model 3/Y Production", 
+          "annual_capacity": "750,000 vehicles",
+          "key_risks": ["typhoon", "covid_lockdown", "geopolitical_tension"]
+        },
+        "gf4_berlin": {
+          "name": "Gigafactory 4 (Berlin)",
+          "location": [52.3988, 13.7683],
+          "country": "Germany",
+          "primary_function": "Model Y Production",
+          "annual_capacity": "500,000 vehicles",
+          "key_risks": ["supply_chain_disruption", "regulatory_changes", "energy_crisis"]
+        },
+        "gf5_austin": {
+          "name": "Gigafactory 5 (Austin)",
+          "location": [30.2161, -97.6197],
+          "country": "USA",
+          "primary_function": "Cybertruck/Model Y",
+          "annual_capacity": "500,000 vehicles", 
+          "key_risks": ["extreme_weather", "grid_instability", "supply_disruption"]
+        }
+      }
+    },
+    "commodity_markets": {
+      "lithium": {
+        "ticker": "LIT",
+        "current_price": 36.15999984741211,
+        "price_change_30d": 3.1374741330132405,
+        "price_change_90d": -13.035117231751936,
+        "volatility_30d": 1.3157098034335757,
+        "risk_score": 0,
+        "risk_level": "Low",
+        "last_updated": "2025-05-31 02:51:47"
+      },
+      "copper": {
+        "ticker": "CPER",
+        "current_price": 29.360000610351562,
+        "price_change_30d": -0.37325655095310495,
+        "price_change_90d": 8.740743001302075,
+        "volatility_30d": 1.798357974763102,
+        "risk_score": 0,
+        "risk_level": "Low",
+        "last_updated": "2025-05-31 02:51:48"
+      },
+      "steel": {
+        "ticker": "SLX",
+        "current_price": 61.8739013671875,
+        "price_change_30d": 8.569748280190082,
+        "price_change_90d": 2.4571981992657976,
+        "volatility_30d": 1.4803670982345554,
+        "risk_score": 1,
+        "risk_level": "Low",
+        "last_updated": "2025-05-31 02:51:51"
+      }
+    },
+    "supplier_network": {
+      "lithium_suppliers": {
+        "albemarle": {
+          "ticker": "ALB",
+          "category": "lithium",
+          "current_price": 55.7599983215332,
+          "price_change_90d": -27.205411515561206,
+          "volatility_90d": 4.50777231430546,
+          "market_cap": 6560777216,
+          "sector": "Basic Materials",
+          "country": "United States",
+          "risk_score": 5,
+          "risk_level": "Medium",
+          "last_updated": "2025-05-31 02:51:37"
+        },
+        "sqm": {
+          "ticker": "SQM",
+          "category": "lithium",
+          "current_price": 30.43000030517578,
+          "price_change_90d": -20.693246931813157,
+          "volatility_90d": 3.1653471873985435,
+          "market_cap": 8577668608,
+          "sector": "Basic Materials",
+          "country": "Chile",
+          "risk_score": 5,
+          "risk_level": "Medium",
+          "last_updated": "2025-05-31 02:51:39"
+        },
+        "ganfeng_lithium": {
+          "name": "Ganfeng Lithium Co.",
+          "location": [28.682, 115.832],
+          "country": "China",
+          "material": "Lithium",
+          "ticker": "SHE:002460",
+          "risk_factors": [
+            "china_export_restrictions",
+            "mining_regulations", 
+            "geopolitical"
+          ]
+        }
+      },
+      "metals_suppliers": {
+        "bhp": {
+          "ticker": "BHP",
+          "category": "metals",
+          "current_price": 48.9900016784668,
+          "price_change_90d": 3.085633309803648,
+          "volatility_90d": 2.3542153997309003,
+          "market_cap": 124305768448,
+          "sector": "Basic Materials",
+          "country": "Australia",
+          "risk_score": 1,
+          "risk_level": "Low",
+          "last_updated": "2025-05-31 02:51:43"
+        },
+        "glencore": {
+          "ticker": "GLEN.L",
+          "category": "metals",
+          "current_price": 283.3999938964844,
+          "price_change_90d": -11.18346351984857,
+          "volatility_90d": 2.659770176644376,
+          "market_cap": 33852127232,
+          "sector": "Basic Materials",
+          "country": "Switzerland",
+          "risk_score": 3,
+          "risk_level": "Medium",
+          "last_updated": "2025-05-31 02:51:44"
+        },
+        "vale": {
+          "ticker": "VALE",
+          "category": "metals",
+          "current_price": 9.130000114440918,
+          "price_change_90d": 0.6092886969311762,
+          "volatility_90d": 2.2662154842355746,
+          "market_cap": 38973960192,
+          "sector": "Basic Materials",
+          "country": "Brazil",
+          "risk_score": 1,
+          "risk_level": "Low",
+          "last_updated": "2025-05-31 02:51:46"
+        }
+      },
+      "critical_suppliers": {
+        "bhp_australia": {
+          "name": "BHP Group (Nickel West)",
+          "location": [-31.9505, 115.8605],
+          "country": "Australia",
+          "material": "Nickel",
+          "ticker": "BHP",
+          "risk_factors": [
+            "mining_accidents",
+            "environmental_regulations",
+            "cyclones"
+          ]
+        },
+        "glencore_congo": {
+          "name": "Glencore (Katanga Mining)",
+          "location": [-11.6094, 27.4731],
+          "country": "DRC",
+          "material": "Cobalt",
+          "ticker": "GLEN.L",
+          "risk_factors": [
+            "political_instability",
+            "conflict_minerals",
+            "infrastructure"
+          ]
+        },
+        "panasonic_japan": {
+          "name": "Panasonic (Battery Division)",
+          "location": [34.6937, 135.5023],
+          "country": "Japan",
+          "material": "Battery Cells",
+          "ticker": "6752.T",
+          "risk_factors": [
+            "earthquake",
+            "tsunami", 
+            "supply_chain_complexity"
+          ]
+        }
+      }
+    },
+    "external_risk_factors": {
+      "natural_disasters": [
+        {
+          "type": "wildfire",
+          "location": "Northern California",
+          "coordinates": [38.7, -120.4],
+          "severity": "medium",
+          "date": "2025-05-25",
+          "affected_suppliers": ["tesla_suppliers_california"],
+          "impact_radius_km": 150,
+          "status": "active"
+        },
+        {
+          "type": "typhoon",
+          "location": "South China Sea",
+          "coordinates": [20.0, 115.0],
+          "severity": "high",
+          "date": "2025-05-28",
+          "affected_suppliers": ["ganfeng_lithium", "catl_battery"],
+          "impact_radius_km": 300,
+          "status": "approaching"
+        }
+      ],
+      "geopolitical_events": [
+        {
+          "type": "trade_restriction",
+          "description": "Potential lithium export quota discussions in China",
+          "countries": ["China", "USA"],
+          "probability": 0.3,
+          "impact_level": "high",
+          "affected_materials": ["lithium", "rare_earth_elements"],
+          "timeline": "2025-Q3"
+        },
+        {
+          "type": "sanctions_risk",
+          "description": "DRC mining regulation changes",
+          "countries": ["DRC"],
+          "probability": 0.4,
+          "impact_level": "medium", 
+          "affected_materials": ["cobalt"],
+          "timeline": "2025-Q2"
+        }
+      ],
+      "cyber_incidents": [
+        {
+          "type": "ransomware_sector",
+          "target_industry": "automotive_suppliers",
+          "threat_level": "elevated",
+          "recent_incidents": 2,
+          "recommendation": "enhanced_monitoring"
+        },
+        {
+          "type": "supply_chain_attack",
+          "target_industry": "semiconductor",
+          "threat_level": "high",
+          "recent_incidents": 1,
+          "recommendation": "supplier_verification"
+        }
+      ],
+      "trade_disruptions": [
+        {
+          "type": "port_congestion",
+          "location": "Shanghai Port",
+          "severity": "medium",
+          "delay_days": 5,
+          "affected_routes": ["Asia-US_West_Coast"],
+          "impact_on_tesla": "battery_materials_delay"
+        },
+        {
+          "type": "shipping_rate_spike",
+          "route": "China-Europe",
+          "increase_percentage": 25,
+          "duration_estimate": "6-8 weeks", 
+          "impact_on_tesla": "increased_logistics_cost"
+        }
+      ],
+      "regulatory_changes": [
+        {
+          "type": "environmental_regulation",
+          "jurisdiction": "EU",
+          "description": "New battery recycling requirements",
+          "effective_date": "2025-07-01",
+          "compliance_cost": "medium",
+          "impact_on_tesla": "supply_chain_restructuring"
+        }
+      ]
+    },
+    "scenario_modeling": {
+      "supplier_bankruptcy": {
+        "name": "Ganfeng Lithium Financial Crisis",
+        "probability": 0.05,
+        "trigger_events": [
+          "debt_crisis",
+          "commodity_price_collapse",
+          "regulatory_shutdown"
+        ],
+        "immediate_impact": {
+          "production_halt_days": 45,
+          "alternative_supplier_ramp_days": 120,
+          "cost_increase_percentage": 35,
+          "affected_tesla_models": ["Model 3", "Model Y", "Model S"]
+        },
+        "mitigation_strategies": [
+          "activate_albemarle_backup_contract",
+          "increase_sqm_allocation",
+          "accelerate_recycling_program",
+          "temporary_lfp_battery_increase"
+        ],
+        "financial_impact_estimate": {
+          "revenue_loss_million": 2400,
+          "additional_costs_million": 800,
+          "recovery_timeline_months": 8
+        }
+      },
+      "major_disaster": {
+        "name": "Shanghai Gigafactory Typhoon Shutdown",
+        "probability": 0.15,
+        "disaster_type": "Category 4 Typhoon",
+        "affected_facilities": [
+          "gf3_shanghai",
+          "supplier_network_east_china"
+        ],
+        "immediate_impact": {
+          "production_halt_days": 14,
+          "supply_chain_recovery_days": 35,
+          "infrastructure_repair_days": 60,
+          "production_loss_vehicles": 35000
+        },
+        "cascading_effects": [
+          "global_model_3_shortage",
+          "battery_supply_disruption", 
+          "logistics_network_strain"
+        ],
+        "financial_impact_estimate": {
+          "direct_damage_million": 400,
+          "lost_revenue_million": 1800,
+          "insurance_coverage_million": 200
+        }
+      },
+      "geopolitical_crisis": {
+        "name": "US-China Trade War Escalation",
+        "probability": 0.25,
+        "trigger_events": [
+          "lithium_export_ban",
+          "semiconductor_restrictions",
+          "reciprocal_tariffs"
+        ],
+        "immediate_impact": {
+          "affected_suppliers": [
+            "ganfeng_lithium",
+            "catl_battery",
+            "chinese_semiconductors"
+          ],
+          "tariff_increase_percentage": 50,
+          "supply_disruption_months": 6,
+          "forced_supplier_diversification": true
+        },
+        "strategic_responses": [
+          "accelerate_north_american_mining",
+          "expand_australian_partnerships",
+          "increase_recycling_capacity",
+          "diversify_to_south_american_suppliers"
+        ],
+        "long_term_impact": {
+          "supply_chain_restructuring_cost_billion": 3.5,
+          "cost_base_increase_percentage": 12,
+          "supply_security_improvement": "significant"
+        }
+      },
+      "cyber_attack": {
+        "name": "Supplier Network Ransomware Attack",
+        "probability": 0.2,
+        "attack_vector": "supply_chain_compromise",
+        "affected_systems": [
+          "supplier_erp",
+          "logistics_tracking",
+          "quality_management"
+        ],
+        "immediate_impact": {
+          "production_disruption_days": 7,
+          "data_recovery_days": 21,
+          "supplier_verification_days": 14,
+          "additional_security_costs_million": 50
+        },
+        "operational_effects": [
+          "manual_tracking_processes",
+          "extended_quality_checks",
+          "supplier_audit_acceleration",
+          "backup_system_activation"
+        ]
+      },
+      "multi_factor_crisis": {
+        "name": "Perfect Storm: Disaster + Geopolitical + Cyber",
+        "probability": 0.02,
+        "component_crises": [
+          "shanghai_typhoon",
+          "us_china_trade_tension",
+          "supplier_cyber_attack"
+        ],
+        "amplification_effects": {
+          "recovery_time_multiplier": 2.5,
+          "cost_impact_multiplier": 1.8,
+          "alternative_options_reduced": 0.4
+        },
+        "extreme_measures_required": [
+          "emergency_supplier_onboarding",
+          "temporary_production_shift",
+          "customer_delivery_deferrals",
+          "strategic_inventory_deployment"
+        ],
+        "stress_test_results": {
+          "supply_chain_resilience_score": 3.2,
+          "recovery_capability": "challenged",
+          "business_continuity_risk": "high"
+        }
+      }
+    },
+    "comprehensive_risk_assessment": {
+      "overall_risk_metrics": {
+        "overall_risk_score": 2.0,
+        "overall_risk_level": "Medium",
+        "last_calculated": "2025-05-31 02:51:52"
+      },
+      "enhanced_risk_scores": {
+        "tesla_overall": {
+          "final_score": 4.65,
+          "risk_level": "Medium",
+          "components": {
+            "financial_base": 4.2,
+            "external_multiplier": 1.0,
+            "scenario_adjustment": 0.45,
+            "geographic_risk": 0
+          }
+        },
+        "supplier_network": {
+          "final_score": 7.25,
+          "risk_level": "Critical",
+          "components": {
+            "financial_base": 5.8,
+            "external_multiplier": 1.25,
+            "scenario_adjustment": 0,
+            "geographic_risk": 0
+          }
+        },
+        "production_capacity": {
+          "final_score": 5.295,
+          "risk_level": "High",
+          "components": {
+            "financial_base": 3.9,
+            "external_multiplier": 1.3,
+            "scenario_adjustment": 0.225,
+            "geographic_risk": 0
+          }
+        }
+      }
+    },
+    "alert_system": {
+      "production_alerts": [
+        {
+          "type": "Production Alert",
+          "severity": "Medium", 
+          "message": "Q4 2024: Deliveries exceeded production by 36,000 vehicles",
+          "impact": "May indicate inventory drawdown or supply chain efficiency"
+        }
+      ],
+      "comprehensive_alerts": [
+        {
+          "type": "Natural Disaster",
+          "severity": "Medium",
+          "message": "Wildfire active in Northern California",
+          "impact": "Radius: 150km",
+          "action": "Monitor affected suppliers and logistics routes"
+        },
+        {
+          "type": "Scenario Risk",
+          "severity": "High",
+          "message": "High probability scenario: US-China Trade War Escalation",
+          "probability": "25.0%",
+          "action": "Review mitigation strategies"
+        },
+        {
+          "type": "Scenario Risk", 
+          "severity": "Medium",
+          "message": "High probability scenario: Supplier Network Ransomware Attack",
+          "probability": "20.0%",
+          "action": "Review mitigation strategies"
+        },
+        {
+          "type": "Risk Score Alert",
+          "severity": "Critical",
+          "message": "Supplier Network: Critical risk",
+          "score": "7.2/10",
+          "action": "Implement enhanced monitoring"
+        },
+        {
+          "type": "Risk Score Alert",
+          "severity": "High",
+          "message": "Production Capacity: High risk",
+          "score": "5.3/10",
+          "action": "Implement enhanced monitoring"
+        }
+      ]
+    },
+    "geospatial_data": {
+      "risk_map": "tesla_supply_chain_risk_map.html"
+    }
+  }
+}

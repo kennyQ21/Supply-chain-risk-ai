@@ -1,0 +1,38 @@
+chains:
+  risk_analysis:
+    model_name: "gpt-4"
+    temperature: 0.1
+    max_tokens: 2000
+    
+  scenario_modeling:
+    model_name: "gpt-4"
+    temperature: 0.3
+    max_tokens: 1500
+    
+  supplier_assessment:
+    model_name: "gpt-3.5-turbo"
+    temperature: 0.2
+    max_tokens: 1000
+    
+  alert_generation:
+    model_name: "gpt-3.5-turbo"
+    temperature: 0.1
+    max_tokens: 800
+
+prompts:
+  risk_analysis:
+    system_message: "You are a supply chain risk analyst expert."
+    include_context: true
+    
+  scenario_modeling:
+    system_message: "You are a scenario planning expert."
+    include_historical_data: true
+
+output_formats:
+  risk_scores:
+    format: "json"
+    schema: "risk_score_schema.json"
+    
+  alerts:
+    format: "structured"
+    priority_levels: ["Low", "Medium", "High", "Critical"]

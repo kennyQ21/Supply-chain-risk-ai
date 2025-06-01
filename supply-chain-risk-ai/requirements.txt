@@ -1,0 +1,38 @@
+# Core LangChain ecosystem
+langchain==0.1.0
+langgraph==0.0.40
+langsmith==0.0.83
+
+# Local LLM and embeddings
+ollama
+sentence-transformers
+chromadb
+
+# Web framework and API
+streamlit
+fastapi
+uvicorn
+
+# Data processing
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+
+# External data sources
+requests
+beautifulsoup4
+feedparser
+python-dotenv
+
+# Synthetic data generation
+faker
+
+# Database
+#sqlite3
+sqlalchemy
+
+# Utilities
+python-dateutil
+pydantic

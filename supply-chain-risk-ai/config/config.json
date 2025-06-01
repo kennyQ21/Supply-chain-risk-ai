@@ -1,0 +1,32 @@
+{
+  "project": {
+    "name": "Supply Chain Risk Management AI",
+    "version": "0.1.0",
+    "description": "Intelligent supply chain risk detection and mitigation system"
+  },
+  "llm": {
+    "provider": "ollama",
+    "model": "llama3.2",
+    "temperature": 0.1,
+    "max_tokens": 2000
+  },
+  "embeddings": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "chunk_size": 500,
+    "chunk_overlap": 50
+  },
+  "risk_thresholds": {
+    "low": 30,
+    "medium": 60,
+    "high": 80,
+    "critical": 95
+  },
+  "data_sources": {
+    "news_feeds": [
+      "https://feeds.reuters.com/reuters/businessNews",
+      "https://rss.cnn.com/rss/money_news_international.rss"
+    ],
+    "weather_api": "openweathermap",
+    "financial_api": "alpha_vantage"
+  }
+}
