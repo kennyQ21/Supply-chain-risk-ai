@@ -36,3 +36,4 @@ sqlalchemy
 # Utilities
 python-dateutil
 pydantic
+plotly
